@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Cadastro 2025</title>
+
+    <!--          CSS           -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <!--           JS           -->
+    <script src="../assets/js/mostrarSenha.js" defer></script>
+    <script src="../assets/js/cadastro.js" defer></script>
+
+<!--          ICON           -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"  />
+
 </head>
 <body>
-    
+    <main class="login">
+
+        <img src="../assets/images/fundo cadastro.jpg" alt="imagem de background" class="login__img">
+
+        <form class="login__form">
+
+            <h1 class="login__title"> Cadastro </h1>
+
+            <div class="login__content">
+
+                <div class="login__box">
+                    <i class="ri-user-3-line login__icon"></i>
+                    
+                    <div class="login__box-input">
+                       <input type="email" id="login-email" class="login__input" required placeholder="">
+                       
+                       <label for="login-email" class="login__label">E-mail</label>
+                    </div>   
+                </div>
+                
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+                    
+                    <div class="login__box-input">
+                       <input type="password" id="login-pass" minlength="8" class="login__input" required placeholder="">
+                       
+                       <label for="login-pass" class="login__label">Password</label>
+
+                       <i class="ri-eye-off-line login__eye" id="login-eye"></i>
+                    </div>   
+
+                </div>
+
+                <div class="login__box">
+                    <i class="ri-lock-2-line login__icon"></i>
+                    
+                    <div class="login__box-input">
+                       <input type="password" id="login-pass-confirm" class="login__input" required placeholder="">
+                       
+                       <label for="login-pass-confirm" class="login__label">Repeat password</label>
+
+                       <i class="ri-eye-off-line login__eye" id="login-eye-confirm"></i>
+                    </div>   
+
+                </div>
+
+
+
+                <button type="submit" class="login__button">Register</button>
+
+                <p class="login__register">
+                    have an account?
+                    <a href="../index.html">Login</a>
+                </p>
+
+            </div>
+        </form>
+    </main>    
 </body>
 </html>
