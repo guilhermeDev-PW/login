@@ -28,6 +28,12 @@
     margin-inline: 1.5rem;
 
     padding: 2.5rem 1.5rem;
+    width: 40%;
+
+    @media (max-width: 500px) {
+        .login__form{
+        width: 90%;}
+    }
 }
 
 .login__title {
@@ -75,13 +81,18 @@
     transition: top 0.3s, font-size 0.3s;
 }
 
-.login__eye {
+.login__eye, #login-eye-confirm {
     position: absolute;
     right: -7rem;
     top: 13px;
     cursor: pointer;
     z-index: 10;
 }
+
+ #login-eye-confirm {
+    right: .1rem;
+}
+
 
 .login__box:nth-child(2) {
     padding-right: 7rem;
@@ -139,7 +150,6 @@
 }
 
 .login__input:not(:placeholder-shown) +.login__label {
-    border: 2px solid blue;
     top: -12px;
     font-size: var(--small-font-size); 
 }
